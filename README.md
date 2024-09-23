@@ -8,6 +8,11 @@ contract BLS is ERC20, Ownable {
     }
 }
 
+The BLS contract is a standard ERC20 token contract that defines the BLS token, with the following characteristics:
+Name: BLS Token
+Symbol: BLS
+Decimals: 18 (standard for ERC20 tokens)
+
 - Purpose: This contract defines a standard ERC20 token named "BLS Token" with the symbol "BLS".
 - Minting: Upon deployment, an initial supply of tokens is minted and assigned to the owner's address.
 
@@ -21,6 +26,11 @@ contract StBLS is ERC20, Ownable {
         _mint(recipient, amount);
     }
 }
+
+The StBLS contract represents another ERC20 token, specifically designed for staked positions of BLS tokens:
+Name: Staked BLS
+Symbol: stBLS
+Decimals: 18 (also follows the standard ERC20 convention)
 
 - Purpose: This contract represents a separate ERC20 token called "Staked BLS" (symbol: "stBLS"), which is used to represent staked positions of the BLS tokens.
 - Minting: The `mint` function allows the owner to create new stBLS tokens and assign them to a specified address. This is typically called when users stake their BLS tokens.
